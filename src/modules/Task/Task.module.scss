@@ -1,0 +1,18 @@
+.Task {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	border-bottom: 2px solid #eee;
+	&.levelA {
+		background: red;
+	}
+	&.levelB {
+		background: yellow;
+	}
+	&.levelC {
+		background: green
+	}
+	&.levelD {
+		background: blue;
+	}
+}
