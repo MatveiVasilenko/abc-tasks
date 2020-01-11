@@ -52,7 +52,7 @@ export default React.memo(({id, idKey, text, category = 'Home', level = 'D'}) =>
 					</div>
 					<div>
 						<Button onClick={() => {
-							opacity == 0 ? setOpacity(1) : setOpacity(0)							
+							opacity === 0 ? setOpacity(1) : setOpacity(0)							
 						}}>Change level</Button>
 						<Button onClick={() => {
 							dispatch({

@@ -1,4 +1,5 @@
 export const initialState = {
+	filter: 'Все',
     tasks: [
 		{
 			id: 1,
@@ -50,6 +51,8 @@ export const taskReducer = (state, action) => {
         	return {
         		...state
         	};
+        case 'CHANGE_CATEGORY' : 
+        	return state
         default:
             return state
     }

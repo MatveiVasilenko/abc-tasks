@@ -3,6 +3,7 @@ import React from 'react'
 import {TasksContext} from './../../context/TasksContext.js'
 import {NavLink} from 'react-router-dom'
 import Task from './../../modules/Task/Task.jsx'
+import Category from './../../modules/Category/Category.jsx'
 
 
 export default React.memo(() => {
@@ -21,6 +22,7 @@ export default React.memo(() => {
 	return (
 		<div>
 			<NavLink to='/'>Вернуться на главную</NavLink>
+			<Category />
 			{tasks.map((task, index) => {
 				return <Task 
 					key={index}
